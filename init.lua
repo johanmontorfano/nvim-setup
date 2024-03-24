@@ -8,6 +8,8 @@ require('mason-setup')      -- kinda explicit
 require('lspzeroc')         -- lsp-zero setup
 require('lsp')              -- lsp setup using lspconfig
 require('nvimtreec')        -- nvim tree setup
-require('lualinec')         -- lualine config
+require('lualinec')         -- lualine setup
+require('troublec')         -- trouble setup
+require('todoc')            -- todo-comments setup
 
 vim.cmd[[colorscheme gruvbox]]

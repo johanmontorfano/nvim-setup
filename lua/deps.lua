@@ -50,5 +50,21 @@ require('lazy').setup({
         dependencies = {
             {"nvim-tree/nvim-web-devicons"}
         }
-    }
+    },                                                      -- lualine
+    {
+        "MeanderingProgrammer/markdown.nvim",
+        name = "render-markdown",
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+        config = function()
+            require("render-markdown").setup({})
+        end
+    },                                                      -- markdown viewer
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },                                                      -- todo markers
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" }
+    }                                                       -- love it
 })

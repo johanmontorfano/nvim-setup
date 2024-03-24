@@ -41,6 +41,15 @@ wk.register({
         name = "nvim-tree",
         o = { "<cmd>:NvimTreeOpen<CR>", "Open Nvim Tree" },
         t = { "<cmd>:NvimTreeToggle<CR>", "Toggle Nvim Tree" },
-        c = { "<cmd>:NvimTreeClose<CR>", "Close Nvim Tree" }
-    }
+        c = { "<cmd>:NvimTreeClose<CR>", "Close Nvim Tree" },
+        f = { "<cmd>:NvimTreeFocus<CR>", "Focus Nvim Tree" }
+    },
+    -- trouble bindings
+    t = {
+        name = "Trouble",
+        t = {"<cmd>:TroubleToggle<CR>", "Toggle"},
+        q = {"<cmd>:TroubleToggle quickfix<CR>", "Quickfix"}
+    },
+    -- todo-comments bindings
+    cq = {"<cmd>:TodoQuickFix<CR>", "Todo QuickFix"}
 }, { prefix = "" })

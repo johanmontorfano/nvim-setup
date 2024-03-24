@@ -6,12 +6,12 @@ require("lualine").setup({
         globalstatus = true
     },
     sections = {
-        lualine_a = {"mode"},
-        lualine_b = {"filename"},
+        lualine_a = {"branch"},
+        lualine_b = {"diff", "filename"},
         lualine_c = {"filetype"},
-        lualine_x = {"mode"},
-        lualine_y = {"progress"},
-        lualine_z = {"branch"}
+        lualine_x = {"progress"},
+        lualine_y = {"location"},
+        lualine_z = {"mode"}
     },
     extensions = {"nvim-tree", "lazy"}
 })
