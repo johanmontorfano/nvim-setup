@@ -52,4 +52,4 @@ wk.register({
     },
     -- todo-comments bindings
     cq = {"<cmd>:TodoQuickFix<CR>", "Todo QuickFix"}
-}, { prefix = "" })
+}, { prefix = "p" })

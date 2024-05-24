@@ -7,12 +7,9 @@ g.loaded_netrwPlugin = 1
 
 g.mapleader = ","
 g.maplocalleader = "\\"
-g.shell = "powershell"
 
 g.t_co = 256
 g.gruvbox_italic = true
-
-o.shell = "powershell"
 
 o.colorcolumn = "80"
 o.background = "dark"

@@ -10,7 +10,11 @@ telescope.setup {
 			"*.png",
 			"*.jpeg",
 			"*.dll",
-			"*.exe"
+			"*.exe",
+            "target/",
+            "*/target/",
+            "*/.git/",
+            "*/node_modules/"
 		},
 		mappings = {
 			i = {

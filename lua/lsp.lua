@@ -6,3 +6,7 @@ lsp_conf.tsserver.setup {}
 lsp_conf.rust_analyzer.setup {}
 lsp_conf.somesass_ls.setup {}
 lsp_conf.clangd.setup {}
+lsp_conf.html.setup {}
+lsp_conf.cssls.setup {}
+lsp_conf.bashls.setup {}
+
