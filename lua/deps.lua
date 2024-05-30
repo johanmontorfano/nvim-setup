@@ -66,5 +66,10 @@ require('lazy').setup({
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" }
-    }                                                       -- love it
+    },                                                      -- love it
+    {
+        "dgox16/oldworld.nvim",
+        lazy = false,
+        priority = 1000
+    }
 })

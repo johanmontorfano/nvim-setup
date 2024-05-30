@@ -12,4 +12,4 @@ require('lualinec')         -- lualine setup
 require('troublec')         -- trouble setup
 require('todoc')            -- todo-comments setup
 
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme oldworld]]
