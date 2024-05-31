@@ -85,11 +85,6 @@ require('lazy').setup({
             colorschemeFile = "after/plugin/theme.lua"
         },
         cmd = "Pineapple"
-    },
-    {
-        "echasnovski/mini-git",
-        version = false,
-        main = "mini.git"
     }
 })
 require('treesitter')		-- nvim-treesitter setup
@@ -102,4 +97,3 @@ require('nvimtreec')        -- nvim tree setup
 require('lualinec')         -- lualine setup
 require('troublec')         -- trouble setup
 require('todoc')            -- todo-comments setup
-require('mini-git')         -- mini.git setup
