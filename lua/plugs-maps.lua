@@ -51,5 +51,7 @@ wk.register({
         q = {"<cmd>:TroubleToggle quickfix<CR>", "Quickfix"}
     },
     -- todo-comments bindings
-    cq = {"<cmd>:TodoQuickFix<CR>", "Todo QuickFix"}
+    cq = {"<cmd>:TodoQuickFix<CR>", "Todo QuickFix"},
+    -- pineapple 
+    p = {"<cmd>:Pineapple<CR>", "Theme manager"}
 }, { prefix = "p" })
