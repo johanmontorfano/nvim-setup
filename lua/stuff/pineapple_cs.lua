@@ -3,4 +3,7 @@ return {
     "catppuccin/nvim",
     "dikiaap/minimalist",
     "joshdick/onedark.vim",
+    "tomasr/molokai",
+    "EdenEast/nightfox.nvim",
+    "rose-pine/neovim",
 }
