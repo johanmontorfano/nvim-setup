@@ -6,4 +6,5 @@ return {
     "tomasr/molokai",
     "EdenEast/nightfox.nvim",
     "rose-pine/neovim",
+    "morhetz/gruvbox",
 }

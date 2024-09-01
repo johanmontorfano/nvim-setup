@@ -13,11 +13,6 @@ require('lazy').setup({
 			vim.o.timeoutlen = 3000
 		end
 	},								                    	-- 💖which key
-	"BurntSushi/ripgrep",							        -- performant grep
-	{
-        "nvim-telescope/telescope-fzf-native.nvim",
-        build = "make"
-    },		                                                -- FZF impl
 	"nvim-treesitter/nvim-treesitter",					    -- syntax highlight
 	"nvim-tree/nvim-web-devicons",						    -- icons
 	"nvim-telescope/telescope.nvim",					    -- 💖Telescope
