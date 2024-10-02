@@ -80,7 +80,8 @@ require('lazy').setup({
             colorschemeFile = "after/plugin/theme.lua"
         },
         cmd = "Pineapple"
-    }
+    },
+    "HelifeWasTaken/VimTek"
 })
 require('treesitter')		-- nvim-treesitter setup
 require('telescopec')		-- telescope.nvim setup
