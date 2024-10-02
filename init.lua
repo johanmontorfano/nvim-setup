@@ -72,15 +72,6 @@ require('lazy').setup({
         lazy = false,
         priority = 1000
     },
-    {
-        "CWood-sdf/pineapple",
-        dependencies = require("stuff.pineapple_cs"),
-        opts = {
-            installedRegistry = "stuff.pineapple_cs",
-            colorschemeFile = "after/plugin/theme.lua"
-        },
-        cmd = "Pineapple"
-    },
     "HelifeWasTaken/VimTek"
 })
 require('treesitter')		-- nvim-treesitter setup
