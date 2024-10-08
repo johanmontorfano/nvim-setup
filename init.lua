@@ -84,3 +84,5 @@ require('nvimtreec')        -- nvim tree setup
 require('lualinec')         -- lualine setup
 require('troublec')         -- trouble setup
 require('todoc')            -- todo-comments setup
+
+vim.cmd [[colorscheme gruvbox]]
