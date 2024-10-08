@@ -1,32 +1,55 @@
 local wk = require("which-key")
 
 wk.register({
-    { "cq", "<cmd>:TodoQuickFix<CR>", desc = "Todo QuickFix" },
-    { "f", group = "Telescope" },
-    { "fb", "<cmd>:Telescope buffers<CR>", desc = "Find buffers" },
-    { "ff", "<cmd>:Telescope find_files<CR>", desc = "Find files" },
-    { "fg", "<cmd>:Telescope live_grep<CR>", desc = "Live grep" },
-    { "fh", "<cmd>:Telescope help_tags<CR>", desc = "Help tags" },
-    { "l", group = "LSP" },
-    { "lS", "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", desc = "Workspace Symbols" },
-    { "la", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code Action" },
-    { "li", "<cmd>LspInfo<cr>", desc = "Info" },
-    { "ll", "<cmd>lua vim.lsp.codelens.run()<cr>", desc = "CodeLens Action" },
-    { "lr", "<cmd>lua vim.lsp.buf.rename()<cr>", desc = "Rename" },
-    { "ls", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Document Symbols" },
-    { "m", group = "Mason" },
-    { "mo", "<cmd>:Mason<CR>", desc = "Mason" },
-    { "mu", "<cmd>:MasonUpdate<CR>", desc = "Update Mason packages" },
-    { "n", group = "nvim-tree" },
-    { "nc", "<cmd>:NvimTreeClose<CR>", desc = "Close Nvim Tree" },
-    { "nf", "<cmd>:NvimTreeFocus<CR>", desc = "Focus Nvim Tree" },
-    { "no", "<cmd>:NvimTreeOpen<CR>", desc = "Open Nvim Tree" },
-    { "nt", "<cmd>:NvimTreeToggle<CR>", desc = "Toggle Nvim Tree" },
-    { "s", group = "Session" },
-    { "sc", "<cmd>:SClose<CR>", desc = "Close session" },
-    { "ss", "<cmd>:SSave<CR>", desc = "Save session" },
-    { "t", group = "Trouble" },
-    { "tq", "<cmd>:TroubleToggle quickfix<CR>", desc = "Quickfix" },
-    { "tt", "<cmd>:TroubleToggle<CR>", desc = "Toggle" },
-    { "wk", "<cmd>:WhichKey<CR>", desc = "Which Key" },
-}, {prefix = "p"})
+    -- which key bindings
+    wk = { "<cmd>:WhichKey<CR>", "Which Key" },
+    -- telescope bindings
+	f = {
+		name = "Telescope",
+		f = { "<cmd>:Telescope find_files<CR>", "Find files" },
+		g = { "<cmd>:Telescope live_grep<CR>", "Live grep"},
+		b = { "<cmd>:Telescope buffers<CR>", "Find buffers" },
+		h = { "<cmd>:Telescope help_tags<CR>", "Help tags" }
+	},
+    -- session bindings
+    s = {
+        name = "Session",
+        s = { "<cmd>:SSave<CR>", "Save session" },
+        c = { "<cmd>:SClose<CR>", "Close session" }
+    },
+    -- mason bindings
+    m = {
+        name = "Mason",
+        o = { "<cmd>:Mason<CR>", "Mason" },
+        u = { "<cmd>:MasonUpdate<CR>", "Update Mason packages" }
+    },
+    -- lsp-zero bindings
+    l = {
+        name = "LSP",
+        a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+        i = { "<cmd>LspInfo<cr>", "Info" },
+        l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
+        r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+        s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
+        S = {
+            "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
+            "Workspace Symbols",
+        }
+    },
+    -- nvim-tree bindings
+    n = {
+        name = "nvim-tree",
+        o = { "<cmd>:NvimTreeOpen<CR>", "Open Nvim Tree" },
+        t = { "<cmd>:NvimTreeToggle<CR>", "Toggle Nvim Tree" },
+        c = { "<cmd>:NvimTreeClose<CR>", "Close Nvim Tree" },
+        f = { "<cmd>:NvimTreeFocus<CR>", "Focus Nvim Tree" }
+    },
+    -- trouble bindings
+    t = {
+        name = "Trouble",
+        t = {"<cmd>:TroubleToggle<CR>", "Toggle"},
+        q = {"<cmd>:TroubleToggle quickfix<CR>", "Quickfix"}
+    },
+    -- todo-comments bindings
+    cq = {"<cmd>:TodoQuickFix<CR>", "Todo QuickFix"},
+}, { prefix = "p" })
