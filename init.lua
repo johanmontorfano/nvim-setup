@@ -72,7 +72,8 @@ require('lazy').setup({
         lazy = false,
         priority = 1000
     },
-    "HelifeWasTaken/VimTek"
+    "HelifeWasTaken/VimTek",                                -- Epitech header
+    "sphamba/smear-cursor.nvim"
 })
 require('treesitter')		-- nvim-treesitter setup
 require('telescopec')		-- telescope.nvim setup
@@ -84,5 +85,6 @@ require('nvimtreec')        -- nvim tree setup
 require('lualinec')         -- lualine setup
 require('troublec')         -- trouble setup
 require('todoc')            -- todo-comments setup
+require('smear_cursor').toggle()
 
 vim.cmd [[colorscheme gruvbox]]
