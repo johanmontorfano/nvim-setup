@@ -12,5 +12,5 @@ cmp.setup({
         completeopt = "menu,menuone,noinsert"
     }
 })
-
+lsp.setup_servers({ "dartls", force = true })
 lsp.setup()

@@ -73,7 +73,15 @@ require('lazy').setup({
         priority = 1000
     },
     "HelifeWasTaken/VimTek",                                -- Epitech header
-    "sphamba/smear-cursor.nvim"
+    "sphamba/smear-cursor.nvim",
+    {
+        'akinsho/flutter-tools.nvim',
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim',
+        },
+        config = true,
+    }                                                       -- Flutter tools
 })
 require('treesitter')		-- nvim-treesitter setup
 require('telescopec')		-- telescope.nvim setup

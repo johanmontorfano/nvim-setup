@@ -10,3 +10,4 @@ lsp_conf.html.setup {}
 lsp_conf.cssls.setup {}
 lsp_conf.bashls.setup {}
 lsp_conf.jdtls.setup {}
+lsp_conf.dartls.setup {}
