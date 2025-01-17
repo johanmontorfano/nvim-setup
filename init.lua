@@ -81,7 +81,12 @@ require('lazy').setup({
             'stevearc/dressing.nvim',
         },
         config = true,
-    }                                                       -- Flutter tools
+    },                                                      -- Flutter tools
+    {
+        "razak17/tailwind-fold.nvim",
+        opts = {},
+        dependencies = { "nvim-treesitter/nvim-treesitter" }
+    }
 })
 require('treesitter')		-- nvim-treesitter setup
 require('telescopec')		-- telescope.nvim setup
