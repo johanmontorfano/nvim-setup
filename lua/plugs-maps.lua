@@ -26,8 +26,8 @@ wk.add({
     { "psc", "<cmd>:SClose<CR>", desc = "Close session" },
     { "pss", "<cmd>:SSave<CR>", desc = "Save session" },
     { "pt", group = "Trouble" },
-    { "ptq", "<cmd>:TroubleToggle quickfix<CR>", desc = "Quickfix" },
-    { "ptt", "<cmd>:TroubleToggle<CR>", desc = "Toggle" },
+    { "ptd", "<cmd>:Trouble diagnostics<CR>", desc = "Diagnostics" },
+    { "ptt", "<cmd>:Trouble<CR>", desc = "Open" },
     { "pwk", "<cmd>:WhichKey<CR>", desc = "Which Key" },
   })
 
