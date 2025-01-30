@@ -36,4 +36,4 @@ o.tabstop = 4
 o.splitright = true
 o.splitbelow = true
 
-vim.api.nvim_exec([[autocmd TermOpen * setlocal nonumber norelativenumber]], false)
+vim.api.nvim_exec([[autocmd TermOpen * setlocal nonumber norelativenumber colorcolumn=1000]], false)
