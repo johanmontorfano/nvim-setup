@@ -11,7 +11,6 @@ g.maplocalleader = "\\"
 g.t_co = 256
 g.gruvbox_italic = true
 
-o.colorcolumn = "80"
 o.background = "dark"
 o.number = true
 o.scrolloff = 20
@@ -36,4 +35,4 @@ o.tabstop = 4
 o.splitright = true
 o.splitbelow = true
 
-vim.api.nvim_exec([[autocmd TermOpen * setlocal nonumber norelativenumber colorcolumn=1000]], false)
+vim.api.nvim_exec([[autocmd TermOpen * setlocal nonumber norelativenumber]], false)
