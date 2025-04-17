@@ -15,6 +15,7 @@ o.background = "dark"
 o.number = true
 o.scrolloff = 20
 o.signcolumn = "yes"
+o.colorcolumn = "80"
 
 o.encoding = "utf8"
 o.fileencoding = "utf8"
