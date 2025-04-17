@@ -1,7 +1,10 @@
 require("lualine").setup {
     options = {
         theme = "gruvbox-material",
-        icons_enabled = true
+        icons_enabled = true,
+        disabled_filetypes = {
+            statusline = {"NvimTree"}
+        }
     },
     sections = {
         lualine_a = {"mode"},
