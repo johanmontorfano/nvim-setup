@@ -1,7 +1,7 @@
 vim.lsp.enable({
     "lua_ls",
     "sourcekit",
-    "pyright",
+    "basedpyright",
     "ts_ls",
     "rust_analyzer",
     "somesass_ls",
