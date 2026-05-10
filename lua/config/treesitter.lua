@@ -1,13 +1,13 @@
-require('nvim-treesitter.configs').setup {
-	ensure_installed = { 
-		"c", 
-		"lua", 
-		"vim", 
-		"vimdoc", 
-		"query", 
-		"angular", 
-		"astro", 
-		"bash", 
+require('nvim-treesitter').setup {
+	ensure_installed = {
+		"c",
+		"lua",
+		"vim",
+		"vimdoc",
+		"query",
+		"angular",
+		"astro",
+		"bash",
 		"cmake",
 		"cpp",
 		"css",

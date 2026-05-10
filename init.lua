@@ -1,8 +1,8 @@
 -- The dependencies are not in a separate file because some plugins needs to 
 -- be at the root of the configuration to work properly.
 
-require('core-config')		-- Required configuration for modules/vim !
-require('lazy-setup')		-- lazy.nvim setup
+require('config.core')		-- Required configuration for modules/vim !
+require('setup.lazy')		-- lazy.nvim setup
 require('lazy').setup({
     "nvim-lua/plenary.nvim",        						-- async lua
 	{
@@ -23,21 +23,6 @@ require('lazy').setup({
         opts = {}
     },                                                      -- sessions
     "mhinz/vim-startify",                                   -- start screen
-    {
-        "VonHeikemen/lsp-zero.nvim",
-        dependencies = {
-            {"neovim/nvim-lspconfig"},
-            {"williamboman/mason.nvim"},
-            {"williamboman/mason-lspconfig.nvim"},
-            {"hrsh7th/nvim-cmp"},
-            {"hrsh7th/cmp-nvim-lsp"},
-            {"hrsh7th/cmp-buffer"},
-            {"hrsh7th/cmp-path"},
-            {"hrsh7th/cmp-nvim-lua"},
-            {"L3MON4D3/LuaSnip"},
-            {"rafamadriz/friendly-snippets"}
-        }
-    },                                                      -- completion
     {
         "nvim-tree/nvim-tree.lua",
         lazy = true,
@@ -67,12 +52,21 @@ require('lazy').setup({
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" }
     },                                                      -- love it
+    { "nvim-mini/mini.nvim", version = "*" },
+    { "mason-org/mason.nvim", opts = {} },
+    {
+        "mason-org/mason-lspconfig.nvim",
+        opts = {},
+        dependencies = {
+            { "mason-org/mason.nvim", opts = {} },
+            "neovim/nvim-lspconfig",
+        },
+    },
     {
         "dgox16/oldworld.nvim",
         lazy = false,
         priority = 1000
     },
-    "HelifeWasTaken/VimTek",                                -- Epitech header
     "sphamba/smear-cursor.nvim",
     {
         'akinsho/flutter-tools.nvim',
@@ -86,18 +80,32 @@ require('lazy').setup({
         "razak17/tailwind-fold.nvim",
         opts = {},
         dependencies = { "nvim-treesitter/nvim-treesitter" }
+    },
+    {
+        "wojciech-kulik/xcodebuild.nvim",
+        dependencies = {
+            "nvim-telescope/telescope.nvim",
+            "MunifTanjim/nui.nvim",
+            "nvim-tree/nvim-tree.lua", -- (optional) to manage project files
+            "nvim-treesitter/nvim-treesitter", -- (optional) for Quick tests support (required Swift parser)
+        },
+        config = function()
+            require("xcodebuild").setup({})
+        end,
     }
 })
-require('treesitter')		-- nvim-treesitter setup
-require('telescopec')		-- telescope.nvim setup
-require('plugs-maps')		-- Key mapping for plugins
-require('mason-setup')      -- kinda explicit
-require('lspzeroc')         -- lsp-zero setup
-require('lsp')              -- lsp setup using lspconfig
-require('nvimtreec')        -- nvim tree setup
-require('lualinec')         -- lualine setup
-require('troublec')         -- trouble setup
-require('todoc')            -- todo-comments setup
+
+require('config.treesitter')
+require('config.telescope')
+require('config.lsp')
+require('config.nvimtree')
+require('config.lualine')
+require('keymap')		    -- Key mapping for plugins
+
+require('mason').setup()
+require('mason-lspconfig').setup()
+require('todo-comments').setup()
+require('trouble').setup()
 require('smear_cursor').toggle()
 
 vim.cmd [[colorscheme gruvbox]]
