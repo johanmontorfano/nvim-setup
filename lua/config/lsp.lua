@@ -2,7 +2,7 @@ vim.lsp.enable({
     "lua_ls",
     "sourcekit",
     "basedpyright",
-    "ts_ls",
+    "vtsls",
     "rust_analyzer",
     "somesass_ls",
     "gopls",
