@@ -86,8 +86,8 @@ require('lazy').setup({
         dependencies = {
             "nvim-telescope/telescope.nvim",
             "MunifTanjim/nui.nvim",
-            "nvim-tree/nvim-tree.lua", -- (optional) to manage project files
-            "nvim-treesitter/nvim-treesitter", -- (optional) for Quick tests support (required Swift parser)
+            "nvim-tree/nvim-tree.lua",
+            "nvim-treesitter/nvim-treesitter"
         },
         config = function()
             require("xcodebuild").setup({})
